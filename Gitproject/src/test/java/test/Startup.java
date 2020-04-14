@@ -27,8 +27,8 @@ public class Startup {
 		
 		public void path() {
 		WebDriverManager.chromedriver().setup();
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\driver\\chromedriver.exe");
-			driver= new ChromeDriver();
+			WebDriverManager.chromedriver().setup();
+		driver= new ChromeDriver();
 		
 		
 		driver.get("https://www.ebay.com");
